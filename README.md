@@ -29,8 +29,39 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Deploy on Vercel (Easiest - Recommended)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push your code to GitHub:
+   ```bash
+   git add .
+   git commit -m "Ready for deployment"
+   git push origin main
+   ```
+
+2. Go to [Vercel](https://vercel.com/new) and sign up/login
+3. Click "Import Project" and select your GitHub repository
+4. Vercel will automatically detect Next.js and deploy your app
+5. Your app will be live at `https://your-project.vercel.app`
+
+### Deploy on Netlify
+
+1. Push your code to GitHub
+2. Go to [Netlify](https://app.netlify.com)
+3. Click "New site from Git"
+4. Connect your repository
+5. Build settings:
+   - Build command: `npm run build`
+   - Publish directory: `.next`
+   - Node version: 20.x
+
+### Deploy on Other Platforms
+
+For other platforms like Railway, Render, or DigitalOcean:
+1. Set Node.js version to 20.x
+2. Build command: `npm run build`
+3. Start command: `npm start`
+4. Note: Make sure to set NODE_ENV=production
+
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
