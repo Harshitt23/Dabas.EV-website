@@ -65,3 +65,8 @@ For other platforms like Railway, Render, or DigitalOcean:
 4. Note: Make sure to set NODE_ENV=production
 
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+##Production --
+npm install
+npm run build
+npm run start
