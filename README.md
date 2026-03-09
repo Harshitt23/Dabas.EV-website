@@ -66,7 +66,7 @@ For other platforms like Railway, Render, or DigitalOcean:
 
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-##Production --
-npm install
-npm run build
-npm run start
+## Production-style run--
+    npm install
+    npm run build
+    npm run start
